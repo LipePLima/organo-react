@@ -1,0 +1,29 @@
+.container__field {
+    padding: 0;
+    border: none;
+}
+
+.field__label {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #212121;
+}
+
+.field__input {
+    width: 100%;
+    height: 48px;
+    margin: 8px 0 28px 0;
+    padding-left: 1rem;
+    color: #A4A4A4;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    border: none;
+    mix-blend-mode: normal;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 0px;
+
+    outline: 1px solid transparent;
+}
