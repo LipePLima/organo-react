@@ -1,5 +1,6 @@
 import Field from "../FieldForm/FieldForm"
 import OptionsList from "../OptionsList/OptionsList";
+import Button from "../Button/Button";
 import "./Form.css";
 
 const Form = () => {
@@ -20,6 +21,9 @@ const Form = () => {
         <Field label="Cargo"  placeholder="Digite seu cargo" />
         <Field label="Imagem" placeholder="Informe o endereço da imagem" />
         <OptionsList label="Time"  itens={times}/>
+        <Button>
+          Criar Card
+        </Button>
       </form>
     </section>
   );
