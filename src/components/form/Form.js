@@ -1,7 +1,17 @@
 import Field from "../FieldForm/FieldForm"
+import OptionsList from "../OptionsList/OptionsList";
 import "./Form.css";
 
 const Form = () => {
+  const times = [
+    "Back-End",
+    "Front-End",
+    "Data Science",
+    "Devops",
+    "Mobile",
+    "UX e Design"
+  ]
+
   return (
     <section className="container__form">
       <form className="form">
@@ -9,6 +19,7 @@ const Form = () => {
         <Field label="Nome"   placeholder="Digite seu nome" />
         <Field label="Cargo"  placeholder="Digite seu cargo" />
         <Field label="Imagem" placeholder="Informe o endereço da imagem" />
+        <OptionsList label="Time"  itens={times}/>
       </form>
     </section>
   );
