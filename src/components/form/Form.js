@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 import "./Form.css";
 import { useState } from "react";
 
-const Form = () => {
+const Form = (props) => {
   const times = [
     "Back-End",
     "Front-End",
@@ -21,7 +21,12 @@ const Form = () => {
 
   const saving = (event) => {
     event.preventDefault();
-    console.log("Form enviado =>", name, position, image, team);
+    props.personRegistered({
+      name,
+      position,
+      image,
+      team
+    })
   };
 
   return (
