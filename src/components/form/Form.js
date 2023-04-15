@@ -13,12 +13,17 @@ const Form = () => {
     "UX e Design"
   ]
 
+  const saving = (event) => {
+    event.preventDefault();
+    console.log("Form enviado")
+  }
+
   return (
     <section className="container__form">
-      <form className="form">
+      <form onSubmit={saving} className="form">
         <h2 className="form__title">Preencha os dados para criar o card do colaborador.</h2>
-        <Field label="Nome"   placeholder="Digite seu nome" />
-        <Field label="Cargo"  placeholder="Digite seu cargo" />
+        <Field required={true} label="Nome"   placeholder="Digite seu nome" />
+        <Field required={true} label="Cargo"  placeholder="Digite seu cargo" />
         <Field label="Imagem" placeholder="Informe o endereço da imagem" />
         <OptionsList label="Time"  itens={times}/>
         <Button>
