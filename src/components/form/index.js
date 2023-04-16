@@ -1,18 +1,10 @@
-import Field from "../FieldForm/FieldForm";
-import OptionsList from "../OptionsList/OptionsList";
-import Button from "../Button/Button";
+import Field from "../FieldForm";
+import OptionsList from "../OptionsList";
+import Button from "../Button";
 import "./Form.css";
 import { useState } from "react";
 
 const Form = (props) => {
-  const times = [
-    "Back-End",
-    "Front-End",
-    "Data Science",
-    "Devops",
-    "Mobile",
-    "UX e Design",
-  ];
 
   const [name, setName]         = useState("");
   const [position, setPosition] = useState("");
@@ -57,7 +49,7 @@ const Form = (props) => {
         />
         <OptionsList
           label="Time"
-          itens={times}
+          itens={props.teans}
           value={team}
           changed={value => setTeam(value)} 
         />

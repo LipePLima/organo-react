@@ -1,0 +1,11 @@
+.container__team {
+    text-align: center;
+    padding: 32px;
+}
+
+.team__title {
+    display: inline-block;
+    padding-bottom: 12px;
+    font-size: 28px;
+
+}
