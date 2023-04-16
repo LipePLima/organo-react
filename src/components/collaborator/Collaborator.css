@@ -1,0 +1,41 @@
+.container__card {
+    width: 262px;
+    height: 272px;
+    border-radius: 10px;
+
+    background-color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card__header {
+    border-radius: 10px 10px 0 0;
+    height: 92px;
+    background-color: antiquewhite;
+}
+
+.card__header img {
+    width: 120px;
+    border-radius: 50%;
+    position: relative;
+    bottom: -40px;
+}
+
+.card__footer {
+    margin-top: 86px;
+}
+
+.card__footer h4 {
+    font-size: 18px;
+    line-height: 22px;
+    color: #6278F7;
+    margin: 0
+}
+
+.card__footer h5 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    color: #212121;
+
+    margin: 10px 0 0 0;
+}
