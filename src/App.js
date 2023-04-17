@@ -37,23 +37,28 @@ function App() {
     },
   ];
 
-  const [people, setPerson] = useState([]);
+  const [collaborators, setCollaborator] = useState([]);
 
-  const newPerson = (person) => {
-    console.log(person);
-    setPerson([...people, person]);
+  const newCollaborator = (collaborator) => {
+    setCollaborator([...collaborators, collaborator]);
   };
 
   return (
     <div className="App">
       <Banner />
-      <Form teans={teans.map(team => team.name)} personRegistered={(person) => newPerson(person)} />
+      <Form
+        teans={teans.map((team) => team.name)}
+        personRegistered={(collaborator) => newCollaborator(collaborator)}
+      />
       {teans.map((team) => (
         <Team
           key={team.name}
           title={team.name}
           colorPrimary={team.colorPrimary}
           colorSecundary={team.colorSecundary}
+          collaborators={collaborators.filter(
+            (collaborator) => collaborator.team === team.name
+          )}
         />
       ))}
     </div>

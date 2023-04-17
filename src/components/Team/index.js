@@ -1,4 +1,4 @@
-import Collaborator from "../collaborator";
+import Collaborator from "../collaborator"
 import "./Team.css";
 
 const Team = (props) => {
@@ -13,7 +13,9 @@ const Team = (props) => {
       >
         {props.title}
       </h3>
-      <Collaborator />
+      <div className="content__collaborators">
+        {props.collaborators.map( collaborator => <Collaborator name={collaborator.name} position={collaborator.position} image={collaborator.image}/> )}
+      </div>
     </section>
   );
 };
