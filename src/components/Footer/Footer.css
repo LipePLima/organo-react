@@ -1,0 +1,35 @@
+.container__footer {
+    height: 213px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: #6278F7;
+    background-image: url(../../img/fundo.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.footer__medias {
+    display: flex;
+    justify-content: space-between;
+    width: 163px;
+}
+
+.footer__medias img {
+    width: 28px;
+    height: 29px;
+    cursor: pointer;
+}
+
+.footer__credits {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+    color: #fff;
+}
+
+.footer__credits a {
+    color: #fff;
+}
