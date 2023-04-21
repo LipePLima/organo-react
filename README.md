@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Organo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [Imagens](#imagens);
+- [Descrição](#descrição);
+- [Tecnologias](#tecnologias);
+- [Contatos](#contatos);
+- [Desenvolvedores](#desenvolvedores);
 
-## Available Scripts
+## Imagens
 
-In the project directory, you can run:
+<h3> :camera: Layout Único Desktop</h3>
 
-### `npm start`
+![Imagem da aplicação](https://user-images.githubusercontent.com/102830741/233542385-f4e49235-e4bb-4ca8-81e5-c823b7ffe5a7.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Descrição 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+A aplicação Organo nada mais é do que um organograma voltado para a divisão de equipes de tecnologias, onde o usuário irá preencher um formulário e criar um card com a sua descrição no time escolhido.
 
-### `npm test`
+## Tecnologias
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) 
 
-### `npm run build`
+## Depoimento 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Projeto feito no curso de React da Alura, estou começando a utilizar e estudar sobre esta tecnologia devido à um projeto voluntário onde utilizaremos esta tecnologia para o desenvolvimento da aplicação. Pude aprender diversas novas funcionalidades e notar a grande diferença entre o React e o Angular, ainda me acostumando!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contatos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<a href="mailto:felipe.lima0160@gmail.com">![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)</a>  <a href="https://wa.me/5521979926096">![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)</a>  <a href="https://www.linkedin.com/in/felipe-lima01/">![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)</a> 
 
-### `npm run eject`
+## Desenvolvedores
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| [<img src="https://avatars.githubusercontent.com/u/102830741?s=400&u=eb0ed821d5deeaaac9a910f737ce38ddfda2f3a9&v=4" width=115><br><sub>Felipe Pereira de Lima</sub>](https://github.com/LipePLima) 
+| :---: |
