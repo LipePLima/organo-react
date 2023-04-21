@@ -1,4 +1,4 @@
-import Collaborator from "../collaborator";
+import Collaborator from "../Collaborator";
 import "./Team.css";
 
 const Team = (props) => {
