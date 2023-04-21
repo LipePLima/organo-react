@@ -1,10 +1,13 @@
+import { Fragment } from "react";
 import "./Button.css";
 
 const Button = (props) => {
     return (
-        <button className="button">
-            {props.children}
-        </button>
+        <Fragment>
+            <button className="button">
+                {props.children}
+            </button>
+        </Fragment>
     )
 };
 

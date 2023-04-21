@@ -4,29 +4,28 @@ import "./Team.css";
 const Team = (props) => {
   return (
     (props.collaborators.length > 0) &&
-      <section
-        className="container__team"
-        style={{ backgroundColor: props.colorPrimary }}
+    <section
+      className="container__team"
+      style={{ backgroundColor: props.colorPrimary }}
+    >
+      <h3
+        className="team__title"
+        style={{ borderBottom: "4px solid" + props.colorSecundary }}
       >
-        <h3
-          className="team__title"
-          style={{ borderBottom: "4px solid" + props.colorSecundary }}
-        >
-          {props.title}
-        </h3>
-        <div className="content__collaborators">
-          {props.collaborators.map((collaborator) => (
-            <Collaborator
-              color={props.colorSecundary}
-              key={collaborator.name}
-              name={collaborator.name}
-              position={collaborator.position}
-              image={collaborator.image}
-            />
-          ))}
-        </div>
-      </section>
-
+        {props.title}
+      </h3>
+      <div className="content__collaborators">
+        {props.collaborators.map((collaborator) => (
+          <Collaborator
+            color={props.colorSecundary}
+            key={collaborator.name}
+            name={collaborator.name}
+            position={collaborator.position}
+            image={collaborator.image}
+          />
+        ))}
+      </div>
+    </section>
   );
 };
 
