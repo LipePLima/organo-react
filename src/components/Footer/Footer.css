@@ -5,16 +5,19 @@
     align-items: center;
     justify-content: space-around;
 
+    background-image: url(../../img/rodape.png);
     background-color: #6278F7;
-    background-image: url(../../img/fundo.png);
-    background-position: center;
-    background-size: contain;
+    color: #fff;
 }
 
-.footer__medias {
+.medias__list {
+    width: 163px;
+    padding: 0;
+    
+    list-style: none;
     display: flex;
     justify-content: space-between;
-    width: 163px;
+    
 }
 
 .footer__medias img {
@@ -27,7 +30,6 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 24.38px;
-    color: #fff;
 }
 
 .footer__credits a {
