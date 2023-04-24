@@ -1,7 +1,7 @@
 import Collaborator from "../Collaborator";
 import "./Team.css";
 
-const Team = (props) => {
+const Team = (props, exclude) => {
   return (
     (props.collaborators.length > 0) &&
     <section
@@ -15,15 +15,17 @@ const Team = (props) => {
         {props.title}
       </h3>
       <div className="content__collaborators">
-        {props.collaborators.map((collaborator) => (
-          <Collaborator
+        {props.collaborators.map((collaborator, index) => {
+
+          return <Collaborator
             color={props.colorSecundary}
-            key={collaborator.name}
+            key={index}
             name={collaborator.name}
             position={collaborator.position}
             image={collaborator.image}
+            exclude={exclude}
           />
-        ))}
+        })}
       </div>
     </section>
   );

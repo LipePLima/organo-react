@@ -1,6 +1,9 @@
 .container__team {
     text-align: center;
     padding: 32px;
+
+    background-image: url("/src/img/fundo.png");
+    background-size: contain;
 }
 
 .team__title {

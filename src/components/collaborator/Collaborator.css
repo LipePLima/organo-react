@@ -1,10 +1,19 @@
 .container__card {
+    position: relative;
+    cursor: pointer;
+
     width: 262px;
     height: 272px;
     border-radius: 10px;
 
     background-color: #fff;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card__delete {
+    position: absolute;
+    top: -10px;
+    right: -10px;
 }
 
 .card__header {

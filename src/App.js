@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Banner from "./components/Banner";
-import Form from "./components/Form";
-import Team from "./components/Team";
+import Form   from "./components/Form";
+import Team   from "./components/Team";
 import Footer from "./components/Footer";
 
 function App() {
@@ -44,6 +44,10 @@ function App() {
     setCollaborator([...collaborators, collaborator]);
   };
 
+  const deleteCollaborator = () => {
+
+  }
+
   return (
     <div className="App">
       <Banner />
@@ -51,15 +55,16 @@ function App() {
         teans={teans.map((team) => team.name)}
         personRegistered={(collaborator) => newCollaborator(collaborator)}
       />
-      {teans.map((team) => (
+      {teans.map((team, index) => (
         <Team
-          key={team.name}
+          key={index}
           title={team.name}
           colorPrimary={team.colorPrimary}
           colorSecundary={team.colorSecundary}
           collaborators={collaborators.filter(
             (collaborator) => collaborator.team === team.name
           )}
+          exclude={deleteCollaborator}
         />
       ))}
       <Footer />
