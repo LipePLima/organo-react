@@ -1,0 +1,13 @@
+.container__form {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.form {
+    max-width: 80%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 36px 64px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.15);
+}
