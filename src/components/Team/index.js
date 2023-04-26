@@ -8,10 +8,8 @@ const Team = (props, exclude) => {
       className="container__team"
       style={{ backgroundColor: props.colorPrimary }}
     >
-      <h3
-        className="team__title"
-        style={{ borderBottom: "4px solid" + props.colorSecundary }}
-      >
+      <input type="color" value={props.colorPrimary} className="team__selectColor"/>
+      <h3 className="team__title" style={{ borderBottom: "4px solid" + props.colorSecundary }}>
         {props.title}
       </h3>
       <div className="content__collaborators">
