@@ -8,33 +8,27 @@ function App() {
   const [teans, setTeans] = useState([
     {
       name: "Back-End",
-      colorPrimary: "#D9F7E9",
-      colorSecundary: "#57C278",
+      color: "#57C278",
     },
     {
       name: "Front-End",
-      colorPrimary: "#E8F8FF",
-      colorSecundary: "#82CFFA",
+      color: "#82CFFA",
     },
     {
       name: "Data Science",
-      colorPrimary: "#F0F8E2",
-      colorSecundary: "#A6D157",
+      color: "#A6D157",
     },
     {
       name: "Devops",
-      colorPrimary: "#FDE7E8",
-      colorSecundary: "#E06B69",
+      color: "#E06B69",
     },
     {
       name: "Mobile",
-      colorPrimary: "#FAE9F5",
-      colorSecundary: "#DB6EBF",
+      color: "#DB6EBF",
     },
     {
       name: "UX e Design",
-      colorPrimary: "#FFF5D9",
-      colorSecundary: "#FFBA05",
+      color: "#FFBA05",
     },
   ]);
 
@@ -55,10 +49,10 @@ function App() {
 
   }
 
-  const changeColor = (color, name) => {
+  const changeColors = (color, name) => {
     setTeans(teans.map( team => {
       if (team.name === name) {
-        team.colorPrimary = color;
+        team.color = color;
       }
 
       return team;
@@ -78,9 +72,8 @@ function App() {
         <Team
           key={index}
           title={team.name}
-          changeColor={changeColor}
-          colorPrimary={team.colorPrimary}
-          colorSecundary={team.colorSecundary}
+          changeColor={changeColors}
+          color={team.color}
           collaborators={collaborators.filter(
             (collaborator) => collaborator.team === team.name
           )}
