@@ -81,10 +81,15 @@ function App() {
     }))
   }
 
+  const registerTeam = (newTeam) => {
+    setTeans([...teans, { ...newTeam, id: uuidv4() }])
+  }
+
   return (
     <div className="App">
       <Banner />
       <Form
+        registerTeam={registerTeam}
         team={teans.map( team => {
           return team.name;
         })}

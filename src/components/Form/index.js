@@ -6,10 +6,12 @@ import { Fragment, useState } from "react";
 
 const Form = (props) => {
 
-  const [name, setName]         = useState("");
-  const [position, setPosition] = useState("");
-  const [image, setImage]       = useState("");
-  const [team, setTeam]         = useState("");
+  const [name, setName]           = useState("");
+  const [position, setPosition]   = useState("");
+  const [image, setImage]         = useState("");
+  const [team, setTeam]           = useState("");
+  const [nameTeam, setNameTeam]   = useState("");
+  const [colorTeam, setColorTeam] = useState("");
 
   const saving = (event) => {
     event.preventDefault();
@@ -59,6 +61,30 @@ const Form = (props) => {
             changed={value => setTeam(value)}
           />
           <Button>Criar Card</Button>
+        </form>
+
+        <form className="form" onSubmit={ event => {
+          event.preventDefault();
+          props.registerTeam({ name: nameTeam, color: colorTeam })  
+        }}>
+          <h2 className="form__title">
+            Preencha os dados para criar um novo time.
+          </h2>
+          <Field
+            required
+            label="Nome"
+            placeholder="Digite o nome do time"
+            value={nameTeam}
+            changed={value => setNameTeam(value)}
+          />
+          <Field
+            required
+            label="Cor"
+            placeholder="Digite a cor do time"
+            value={colorTeam}
+            changed={value => setColorTeam(value)}
+          />
+          <Button>Criar um novo time</Button>
         </form>
       </section>
     </Fragment>
