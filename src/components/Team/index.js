@@ -1,14 +1,14 @@
 import Collaborator from "../Collaborator";
 import "./Team.css";
 
-const Team = (props, exclude) => {
+const Team = (props, exclude, changeColor) => {
   return (
     (props.collaborators.length > 0) &&
     <section
       className="container__team"
       style={{ backgroundColor: props.colorPrimary }}
     >
-      <input type="color" value={props.colorPrimary} className="team__selectColor"/>
+      <input onChange={ event => changeColor(event.target.value, props.title)} type="color" value={props.colorPrimary} className="team__selectColor"/>
       <h3 className="team__title" style={{ borderBottom: "4px solid" + props.colorSecundary }}>
         {props.title}
       </h3>

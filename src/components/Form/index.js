@@ -54,7 +54,7 @@ const Form = (props) => {
           />
           <OptionsList
             label="Time"
-            itens={props.teans}
+            itens={props.team}
             value={team}
             changed={value => setTeam(value)}
           />

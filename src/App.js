@@ -5,7 +5,7 @@ import Team   from "./components/Team";
 import Footer from "./components/Footer";
 
 function App() {
-  const teans = [
+  const [teans, setTeans] = useState([
     {
       name: "Back-End",
       colorPrimary: "#D9F7E9",
@@ -36,9 +36,16 @@ function App() {
       colorPrimary: "#FFF5D9",
       colorSecundary: "#FFBA05",
     },
-  ];
+  ]);
 
-  const [collaborators, setCollaborator] = useState([]);
+  const [collaborators, setCollaborator] = useState([
+    {
+      name: "Felipe Lima",
+      position: "Desenvolvedor FrontEnd",
+      image: "https://github.com/LipePLima.png",
+      team: teans[0].name
+    }
+  ]);
 
   const newCollaborator = (collaborator) => {
     setCollaborator([...collaborators, collaborator]);
@@ -48,17 +55,30 @@ function App() {
 
   }
 
+  const changeColor = (color, name) => {
+    setTeans(teans.map( team => {
+      if (team.name === name) {
+        team.colorPrimary = color;
+      }
+
+      return team;
+    }))
+  }
+
   return (
     <div className="App">
       <Banner />
       <Form
-        teans={teans.map((team) => team.name)}
+        team={teans.map( team => {
+          return team.name;
+        })}
         personRegistered={(collaborator) => newCollaborator(collaborator)}
       />
       {teans.map((team, index) => (
         <Team
           key={index}
           title={team.name}
+          changeColor={changeColor}
           colorPrimary={team.colorPrimary}
           colorSecundary={team.colorSecundary}
           collaborators={collaborators.filter(
