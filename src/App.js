@@ -42,6 +42,7 @@ function App() {
   const [collaborators, setCollaborator] = useState([
     {
       id: uuidv4(),
+      favorite: false,
       name: "Felipe Lima",
       position: "Desenvolvedor FrontEnd",
       image: "https://github.com/LipePLima.png",
@@ -49,6 +50,7 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorite: false,
       name: "Felipe Lima",
       position: "Desenvolvedor FrontEnd",
       image: "https://github.com/LipePLima.png",
@@ -56,6 +58,7 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorite: false,
       name: "Felipe Lima",
       position: "Desenvolvedor FrontEnd",
       image: "https://github.com/LipePLima.png",
@@ -82,7 +85,14 @@ function App() {
   }
 
   const registerTeam = (newTeam) => {
-    setTeans([...teans, { ...newTeam, id: uuidv4() }])
+    setTeans([...teans, { ...newTeam, id: uuidv4()}])
+  }
+
+  const changeFavorite = (id) => {
+    setCollaborator( collaborators.map( collaborator => {
+      if(collaborator.id === id) collaborator.favorite = !collaborator.favorite;
+      return collaborator
+    }))
   }
 
   return (
@@ -106,6 +116,7 @@ function App() {
             (collaborator) => collaborator.team === team.name
           )}
           exclude={deleteCollaborator}
+          bookmark={changeFavorite}
         />
       ))}
       <Footer />

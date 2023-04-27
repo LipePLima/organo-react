@@ -24,6 +24,8 @@ const Team = (props) => {
             position={collaborator.position}
             image={collaborator.image}
             exclude={props.exclude}
+            favorite={collaborator.favorite}
+            bookmark={props.bookmark}
           />
         })}
       </div>
