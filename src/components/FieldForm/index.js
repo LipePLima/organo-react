@@ -1,24 +1,24 @@
 import "./FieldForm.css";
 import { Fragment } from "react";
 
-const FieldForm = (props) => {
+const FieldForm = ({ changed, label, value, required, type = 'text', placeholder}) => {
 
   const typed = (event) => {
-    props.changed(event.target.value)
+    changed(event.target.value)
     
   };
 
   return (
     <Fragment>
       <div className="container__field">
-        <label className="field__label">{props.label}</label>
+        <label className="field__label">{label}</label>
         <input
-          value={props.value}
+          value={value}
           onChange={typed}
-          required={props.required}
-          className="field__input"
-          type="text"
-          placeholder={props.placeholder}
+          required={required}
+          className={`field__input input__${type}`}
+          type={type}
+          placeholder={placeholder}
         />
       </div>
     </Fragment>

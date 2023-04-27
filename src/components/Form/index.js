@@ -79,6 +79,7 @@ const Form = (props) => {
           />
           <Field
             required
+            type="color" 
             label="Cor"
             placeholder="Digite a cor do time"
             value={colorTeam}

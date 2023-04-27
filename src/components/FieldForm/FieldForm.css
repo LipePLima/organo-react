@@ -21,3 +21,7 @@
 
     outline: 1px solid transparent;
 }
+
+.input__color {
+    padding: 2px 10px;
+}
